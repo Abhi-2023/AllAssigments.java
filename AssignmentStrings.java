@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Arrays;
 
 public class AssignmentStrings {
  public static void main (String args[]){
@@ -33,30 +34,43 @@ public class AssignmentStrings {
 
     // Question no..2.....
 
-    String input = "PWSKILLS";
+    // String input = "PWSKILLS";
 
-    String result = "";
+    // String result = "";
 
-    for ( int i = input.length()-1; i >=0; i--){
-        result += input.charAt(i);
-    }
-    System.out.println(result);
+    // for ( int i = input.length()-1; i >=0; i--){
+    //     result += input.charAt(i);
+    // }
+    // System.out.println(result);
 
-    // Question no...... 3.......
+    // // Question no...... 3.......
 
-    String input1 = "Think Twice";
-    String result1 = "";
-    String sarr[] = input1.split(" ");
+    // String input1 = "Think Twice";
+    // String result1 = "";
+    // String sarr[] = input1.split(" ");
 
-    for(String elem : sarr){
-        for ( int i = elem.length() - 1; i >= 0; i--){
-            result1 += elem.charAt(i);
-        }
-        result1 += " ";
-    }
+    // for(String elem : sarr){
+    //     for ( int i = elem.length() - 1; i >= 0; i--){
+    //         result1 += elem.charAt(i);
+    //     }
+    //     result1 += " ";
+    // }
 
 
-    System.out.println(result1);
+    // System.out.println(result1);
+
+    // Question no . 4 
+
+    String input2 = "Solution of Assignment";
+
+    input2 = input2.toLowerCase();
+    input2 = input2.replace(" ", "");
+
+    char []sarr1 = input2.toCharArray();
+    Arrays.sort(sarr1);
+   String result3 = new String(sarr1);
+
+    System.out.println(sarr1);
 
 }   
 }
