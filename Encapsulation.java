@@ -2,12 +2,22 @@
 class demo{
 private int age ;
 private String name ;
-
+public int getAge() {
+    return age;
+}
+public void setAge(int age) {
+    this.age = age;
+}
+public String getName() {
+    return name;
+}
+public void setName(String name) {
+    this.name = name;
+}
 public void show(){
     System.out.println(name + " " + age);
 }
 }
-
 public class Encapsulation {
     public static void main(String[] args) {
         demo obj = new demo();
